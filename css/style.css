@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #007bff;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+main h2 {
+    color: #333;
+}
+
+main .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+main .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Updated Gallery Section */
+.gallery {
+    display: flex; /* Align images in one row */
+    justify-content: space-between; /* Space out images evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    gap: 10px; /* Optional: Adds space between images */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.gallery img {
+    width: 80%; /* Adjust size to fit 4 images in a row (with gap) */
+    height: 200px; /* Ensures all images are the same height */
+    object-fit: cover; /* Keeps image aspect ratio */
+    border-radius:5px; /* Adds rounded corners */
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.4);
+}
+
+/* Categories Section Styles */
+.categories {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 3rem 0; /* Add spacing around the section */
+}
+
+.categories h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333; /* Dark text for the heading */
+}
+
+.categories .card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensure content fits within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Ensure a clean white card background */
+}
+
+.categories .card:hover {
+    transform: scale(1.3); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
+.categories .card-img-top {
+    height: 200px; /* Uniform height for all images */
+    object-fit: cover; /* Ensure images are cropped evenly */
+    border-bottom: 1px solid #ddd; /* Add a subtle divider */
+}
+
+.categories .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333; /* Dark color for readability */
+}
+
+.categories .card-text {
+    font-size: 0.95rem;
+    color: #666; /* Neutral text color for descriptions */
+    margin-bottom: 1rem; /* Space below text */
+}
+
+.categories .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Primary color for the price */
+}
+
+.categories .duration {
+    font-size: 0.9rem;
+    color: #999; /* Muted color for tour duration */
+}
+
+.categories .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+    background-color: #28a745; /* Green background for ratings */
+    color: #fff; /* White text for contrast */
+    border-radius: 5px; /* Rounded badge */
+    display: inline-block; /* Inline styling for alignment */
+}
+
+/* About Us Page Styles */
+.about-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa; /* Light background to match Categories section */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section ul li i {
+    color: #007bff; /* Primary color for icons */
+    margin-right: 10px;
+}
+
+.about-section .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-section .card-body {
+    padding: 1.5rem;
+}
+
+.about-section .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.about-section .team-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 3rem;
+}
+
+.about-section .team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-section .team .card {
+    flex: 1 1 30%; /* Adjusts the cards to take up 3 items in a row */
+    margin-bottom: 20px;
+}
+
+.about-section .team .card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-section .team .card-body {
+    padding: 1.5rem;
+}
+
+.about-section .team .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-section .team .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Add background image to About Us section */
+.about-section {
+    padding: 3rem 0;
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg");
+    /* Add the path to your background image here */
+    background-size: cover; /* Make sure the background covers the entire section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    color: rgb(225, 191, 191); /* Change text color to white for contrast */
+}
+
+/* Optional: Add some transparency to the text background for better readability */
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+
+/* Contact Page Styling */
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #888fb1;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.contact input, .contact textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Section */
+.social-media {
+    background-color: #f1f3f5;
+    padding: 40px 0;
+}
+
+.social-media h4 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-media p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.social-media .d-flex a {
+    font-size: 2.5rem;
+    color: #495057;
+    transition: color 0.3s;
+    margin: 0 20px;
+}
+
+.social-media .d-flex a:hover {
+    color: #007bff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Custom styles for the booking page */
+.booking {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.booking h2 {
+    color: #007bff;
+}
+
+.booking .form-control {
+    border-radius: 10px;
+}
+
+.booking .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.booking .btn-primary:hover {
+    background-color: #0056b3;
+}
